@@ -1,15 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", "schedule:monthly"],
-  "packageRules": [
-    {
-      "matchUpdateTypes": [
-        "minor", 
-        "patch",
-        "pin",
-        "digest"
-      ],
-      "autoMerge": true
-    }
+  "extends": [
+    "config:base", 
+    "schedule:monthly",
+    ":automergeMinor",
+    ":automergeRequireAllStatusChecks"
   ]
 }

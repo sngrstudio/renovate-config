@@ -3,7 +3,9 @@
   "extends": [
     "config:base", 
     "schedule:monthly",
+    ":maintainLockFilesMonthly",
     ":automergeMinor",
     ":automergeRequireAllStatusChecks"
-  ]
+  ],
+  "commitMessageSuffix": "[skip ci]"
 }

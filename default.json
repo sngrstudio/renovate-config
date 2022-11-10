@@ -3,6 +3,7 @@
   "extends": [
     "config:base", 
     "schedule:monthly",
+    ":pinAllExceptPeerDependencies",
     ":maintainLockFilesMonthly",
     ":automergeMinor",
     ":automergeRequireAllStatusChecks"

@@ -7,6 +7,5 @@
     ":maintainLockFilesMonthly",
     ":automergeMinor",
     ":automergeRequireAllStatusChecks"
-  ],
-  "commitMessageSuffix": "[skip ci]"
+  ]
 }

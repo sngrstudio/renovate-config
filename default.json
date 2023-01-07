@@ -1,12 +1,24 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base", 
+    "config:base",
     "schedule:monthly",
     ":pinAllExceptPeerDependencies",
     ":maintainLockFilesMonthly",
     ":automergeMinor",
     ":automergeRequireAllStatusChecks",
     "group:allNonMajor"
-  ]
+  ],
+  "lockFileMaintenance": {
+    "platformAutomerge": true
+  },
+  "pin": {
+    "platformAutomerge": true
+  },
+  "patch": {
+    "platformAutomerge": true
+  },
+  "minor": {
+    "platformAutomerge": true
+  }
 }

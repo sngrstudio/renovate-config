@@ -4,7 +4,6 @@
     "config:base",
     "schedule:monthly",
     ":pinAllExceptPeerDependencies",
-    ":pinSkipCi",
     ":maintainLockFilesMonthly",
     ":automergeMinor",
     ":automergeRequireAllStatusChecks",

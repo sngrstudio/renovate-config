@@ -8,5 +8,5 @@
     ":automergeMinor",
     ":automergeRequireAllStatusChecks",
     "group:allNonMajor"
-  ],
+  ]
 }

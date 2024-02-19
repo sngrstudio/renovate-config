@@ -9,16 +9,4 @@
     ":automergeRequireAllStatusChecks",
     "group:allNonMajor"
   ],
-  "lockFileMaintenance": {
-    "platformAutomerge": true
-  },
-  "pin": {
-    "platformAutomerge": true
-  },
-  "patch": {
-    "platformAutomerge": true
-  },
-  "minor": {
-    "platformAutomerge": true
-  }
 }

@@ -7,6 +7,6 @@
     ":combinePatchMinorReleases",
     ":pinAllExceptPeerDependencies",
     ":pinSkipCi",
-    "schedule:weekly",
+    "schedule:weekly"
   ]
 }

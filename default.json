@@ -7,7 +7,7 @@
     ":combinePatchMinorReleases",
     ":pinAllExceptPeerDependencies",
     ":pinSkipCi",
-    "schedule:weekly",
+    "schedule:monthly",
     "schedule:automergeNonOfficeHours"
   ]
 }

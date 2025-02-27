@@ -2,6 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "security:only-security-updates",
+    ":automergeStableNonMajor",
+    ":automergeRequireAllStatusChecks",
     "schedule:automergeNonOfficeHours"
   ]
 }

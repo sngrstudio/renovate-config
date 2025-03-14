@@ -7,8 +7,6 @@
     ":combinePatchMinorReleases",
     ":pinAllExceptPeerDependencies",
     ":pinSkipCi",
-    "schedule:monthly",
-    "schedule:automergeNonOfficeHours",
     "security:openssf-scorecard"
   ]
 }

@@ -5,5 +5,11 @@
     ":automergeStableNonMajor",
     ":automergeRequireAllStatusChecks",
     "security:openssf-scorecard"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "automerge": true
+    }
   ]
 }

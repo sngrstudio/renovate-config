@@ -4,7 +4,6 @@
     "security:only-security-updates",
     ":automergeStableNonMajor",
     ":automergeRequireAllStatusChecks",
-    "schedule:automergeNonOfficeHours",
     "security:openssf-scorecard"
   ]
 }

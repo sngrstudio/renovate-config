@@ -6,7 +6,6 @@
     ":automergeRequireAllStatusChecks",
     ":combinePatchMinorReleases",
     ":pinAllExceptPeerDependencies",
-    ":pinSkipCi",
     "security:openssf-scorecard"
   ],
   "packageRules": [

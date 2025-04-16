@@ -6,7 +6,8 @@
     ":automergeRequireAllStatusChecks",
     ":combinePatchMinorReleases",
     ":pinAllExceptPeerDependencies",
-    "security:openssf-scorecard"
+    "security:openssf-scorecard",
+    "schedule:weekly"
   ],
   "packageRules": [
     {

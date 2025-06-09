@@ -2,9 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:best-practices",
-    ":automergeStableNonMajor",
     ":automergeRequireAllStatusChecks",
-    ":combinePatchMinorReleases",
     ":pinAllExceptPeerDependencies",
     "security:openssf-scorecard",
     "schedule:weekly"
@@ -13,6 +11,25 @@
     {
       "matchManagers": ["github-actions"],
       "automerge": true
+    },
+    {
+      "matchFileNames": [".devcontainer/**", "**/docker-compose*.yml", "**/docker-compose*.yaml"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["dockerfile"],
+      "automerge": false
+    },
+    {
+      "matchManagers": ["npm", "bun"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "groupName": "npm non-major updates"
+    },
+    {
+      "matchManagers": ["npm", "bun"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false
     }
   ]
 }

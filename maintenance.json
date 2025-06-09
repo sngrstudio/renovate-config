@@ -2,14 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "security:only-security-updates",
-    ":automergeStableNonMajor",
-    ":automergeRequireAllStatusChecks",
     "security:openssf-scorecard"
   ],
   "packageRules": [
     {
       "matchManagers": ["github-actions"],
-      "automerge": true
+      "automerge": true,
+      "enabled": true,
+      "automergeSchedule": ["at any time"]
     }
   ]
 }
